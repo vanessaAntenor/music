@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <p align ="center"><img style =  "height: 250px;
+width: 1475px"; src = "https://lunaguitars.files.wordpress.com/2011/06/music.jpg">
+</img> </p>
+  <script src="myScript.js"> </script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 120%;
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+    background-color: #330000;
+    color: white;
+    float: left;
+    border: none;
+    outline: 1px solid #ccc;
+    cursor: pointer;
+    padding: 13px 20px;
+    font-size: 17px;
+    width: 33.25%;
+}
+
+.tablink:hover {
+    background-color:#c97a57;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: brown;
+    display: none;
+    padding: 50px 20px;
+    height: 100%;
+}
+
+#Home {background-color: #eedfcc;}
+#About {background-color: #eedfcc;}
+#Contact {background-color: #eedfcc;}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, '#800000')">Home</button>
+<button class="tablink" onclick="openPage('About', this, '#800000')">About</button>
+<button class="tablink" onclick="openPage('Contact', this, '#800000')">Contact</button>
+
+<div id="Home" class="tabcontent">
+
+  <h3 align ="center"; style= "font-size : 5em" ; "color:#330000">Music</h3>
+  <p align ="center"><img style =  "height: 500px;
+width: 1475px"; src = "http://2.bp.blogspot.com/-AlsaoO-9Crw/UZ6n4stSw5I/AAAAAAAARt4/tGGRCbRMx1E/s1600/2013_may_widescreen.jpg">
+</img> </p>
+  <p> <h2>Music is something that I am really passionate about. </h2></p>
+
+  <h3>Here's the music I have liked on soundcloud. </h3>
+  <p>Click on the soundcloud image to see it. </p>
+  <a = href = "https://soundcloud.com/vanessa-antenor/likes">
+  <p><img src="https://sp.yimg.com/ib/th?id=OIP.H7t1fOHFjWElnVhexQhhUAHaEK&pid=15.1&rs=1&c=1&qlt=95&w=201&h=113"
+  width="100" height="100"></img> </a> </p>
+
+
+</div>
+
+<div id="About" class="tabcontent">
+  <h2>About</h2>
+  <p>Hey, there! My name is Vanessa and I'm a girl who codes.
+    I go to Boston International High School.</p>
+    <p>I'm 18 and I'm from Haiti. I came here in Boston 2 years ago.
+    I decided to create that website to talk about my passion which is Music.</p>
+  <h3>About Music</h3>
+  <p>Music helped me go through a lot. I listen to music depending on my mood. </p>
+  <p><img style =  "height: 200px;
+width: 500px"; src = "https://songsandquotes.files.wordpress.com/2014/07/8793e09082629e2a66a06a4514f1a9c5.jpg">
+</img> </p>
+
+
+
+
+<p> <h4> I basically like all kinds of music. However, my favorite kinds of music are:</h4> </p>
+
+<table>
+<tr>
+  <td>
+    <div class=figure>
+  <p aling="center"> <h3> Carribean Music</h3></p>
+  <p><img src="http://caricom.org/images/uploads/images/12457/caribbean-music.jpg"
+    width="500" height="200"></img></p>
+    </div>
+  </td>
+  <td>
+    <div class=figure>
+      <p aling="center"><h3> AfroBeats</h3> </p>
+  <p><img src="https://i.ytimg.com/vi/db5KCohVMv0/maxresdefault.jpg"
+    width="500" height="200"></img></p>
+    </div>
+  </td>
+  <td>
+    <div class=figure>
+    <p aling="center"> <h3> Hip Hop </h3></p>
+  <p><img src="https://lh3.ggpht.com/S1a6e6wY1pFoO8P5JSbfjM-4a5Rd3Z0LFdt9UPfnJfrmB5l7FDNSVPR-_NPS2jwfQw=w300"
+    width="500" height="200"></img></p>
+    </div>
+  </td>
+</tr>
+</table>
+
+  <p>This is one of my favorite old reggae songs: <a = href= "https://www.youtube.com/watch?time_continue=4&v=TsrKloxhfaw">Champion</a></p>
+</div>
+
+
+<div id="Contact" class="tabcontent">
+  <h3>Guitar Player</h3>
+
+  <p><h3> I play the guitar but, I really wish I knew how to play the piano, the violin, and the drums.
+     When I play guitar and sing, I can totally forget everything around me.
+</h3> </p>
+    <p><h3> So, every time I get the chance to, I entertain myself learning a new song.</h3></p>
+     <p> Click the image to see me playing guitar. <a = href = "https://www.instagram.com/p/BL3rhGIgHfv/?taken-by=vanessa_antenor">
+ <p><img src="http://bandaidmusic.net/wp-content/uploads/2013/09/anthem-acoustic-guitar-pickup-microphone-header.png"
+   width="200" height="200"></img> </a> </p>
+   <h4> This year, I'll be teaching beginnerc how to play guitar.<h4>
+     <h4> So if you interested please click the button.</h4>
+     <p id="demo" style="display:none">Cellphone : 339-206-6252. E-mail: bvantenor@gmail.com </p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me To see info!</button>
+</div>
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
