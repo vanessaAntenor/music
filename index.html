@@ -11,7 +11,7 @@ width: 1475px"; src = "https://lunaguitars.files.wordpress.com/2011/06/music.jpg
 
 /* Set height of body and the document to 100% */
 body, html {
-    height: 135%;
+    height: 120%;
     margin: 0;
     font-family: Arial;
 }
@@ -122,24 +122,63 @@ width: 500px"; src = "https://songsandquotes.files.wordpress.com/2014/07/8793e09
 </table>
 
   <p>This is one of my favorite old reggae songs: <a = href= "https://www.youtube.com/watch?time_continue=4&v=TsrKloxhfaw">Champion</a></p>
+
+    <p><h3> I play the guitar but, I really wish I knew how to play the piano, the violin, and the drums.
+       When I play guitar and sing, I can totally forget everything around me.
+  </h3> </p>
+      <p><h3> So, every time I get the chance to, I entertain myself learning a new song.</h3></p>
+       <p> Click the image to see me playing guitar. <a = href = "https://www.instagram.com/p/BL3rhGIgHfv/?taken-by=vanessa_antenor">
+   <p><img src="http://bandaidmusic.net/wp-content/uploads/2013/09/anthem-acoustic-guitar-pickup-microphone-header.png"
+     width="200" height="200"></img> </a> </p>
 </div>
 
 
 <div id="Contact" class="tabcontent">
   <h3>Guitar Player</h3>
 
-  <p><h3> I play the guitar but, I really wish I knew how to play the piano, the violin, and the drums.
-     When I play guitar and sing, I can totally forget everything around me.
-</h3> </p>
-    <p><h3> So, every time I get the chance to, I entertain myself learning a new song.</h3></p>
-     <p> Click the image to see me playing guitar. <a = href = "https://www.instagram.com/p/BL3rhGIgHfv/?taken-by=vanessa_antenor">
- <p><img src="http://bandaidmusic.net/wp-content/uploads/2013/09/anthem-acoustic-guitar-pickup-microphone-header.png"
-   width="200" height="200"></img> </a> </p>
-   <h4> This year, I'll be teaching beginnerc how to play guitar.<h4>
+   <h4> This year, I'll be teaching beginners how to play guitar.<h4>
      <h4> So if you interested please click the button.</h4>
-     <p id="demo" style="display:none">Cellphone : 339-206-6252. E-mail: bvantenor@gmail.com </p>
+     <p id="demo" style="display:none">Cellphone : 339-206-6252. </p>
+     <button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me To Find My Phone Number!</button>
+<!-- staritng code for contacting!  -->
+<p> Please, email me using the comment box below </p>
 
-<button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me To see info!</button>
+    <div class="container">
+  <form action="mailto:bantenor@bostonk12.org" method="get">
+    <div class="row">
+      <div class="col-25">
+        <label for="from">From</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="from" name="from" placeholder="Please enter your e-mail..">
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write the subject.."></textarea>
+      </div>
+      <div class="row">
+        <div class="col-75">
+          <label for="body">Body</label>
+        </div>
+
+      <div class="col-50">
+        <textarea id="body" name="body" placeholder="Write something.."  style =  "height: 200px;
+      width: 475px" ></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+</div>
+
 </div>
 
 
@@ -161,6 +200,13 @@ function openPage(pageName,elmnt,color) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
+
+
+
+
+
+
+
 
 
 </body>
